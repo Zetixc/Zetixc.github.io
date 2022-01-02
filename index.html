@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">PORTFOLIO</a>
+      <div class="toggle"></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section class="banner">
+      <div class="textBx">
+        <h2>Hello, I'm<br /><span>'Aarif Faqiih</span></h2>
+        <h3>I'm a student of SMK Telkom Purwokerto</h3>
+        <a href="#" class="btn">About Me</a>
+      </div>
+    </section>
+    <section class="about">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx w50">
+          <h3>I'm a high school student</h3>
+          <p>
+            Hi, my name is 'Aarif Rahman Jalaluddin Faqihh, people used to call me Faqih. I live in Banyumas Regency, precisely in the city of Purwokerto. I'm a student from SMK Telkom Purwokerto and I'm interested in programming, that's
+            why I took Web Design extracurricular. In Web Design extracurricular I learned many things, for example I learned how to make my own website, I know various programming languages ​​and many more, the first thing I learned in
+            extracurricular was HTML. So that's all my short introduction, have a nice day.
+          </p>
+        </div>
+        <div class="w50">
+          <img src="img1.jpg" class="img" />
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="heading white">
+        <h2>My Skills</h2>
+      </div>
+      <div class="content">
+        <div class="skillsBx">
+          <img src="kalo final/web.png" width="128px" height="128px" />
+          <h2>Web Development</h2>
+          <p>I'm still a beginner in this field but I will try my best</p>
+        </div>
+        <div class="skillsBx">
+          <img src="kalo final/music.png" width="128px" height="128px" />
+          <h2>Music Production</h2>
+          <p>I've studied in this field for 3 years, but now I very rarely do it</p>
+        </div>
+        <div class="skillsBx">
+          <img src="kalo final/3d.png" width="128px" height="128px" />
+          <h2>3D Model</h2>
+          <p>I'm still a beginner in this field but I will try my best</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="heading">
+        <h2>Contact</h2>
+        <p>Want to contact me? You can open this card</p>
+      </div>
+      <div>
+        <div class="card">
+          <div class="imgBox">
+            <img src="depan.jpg" />
+            <img src="belakang.jpg" />
+          </div>
+          <div class="details">
+            <div class="content">
+              <h2>Hi, this is my<br /><span>Social media</span></h2>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/zetixcs/"><img src="instagram.png" height="26px" /></a>
+                <a href="https://www.behance.net/aariffaqiih"><img src="behance.png" height="27px" /></a>
+                <a href="#"><img src="github.png" height="29px" /></a>
+                <a href="https://www.youtube.com/channel/UC9WAt38ptIECNHItoeiceqw"><img src="youtube.png" height="29px" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
