@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "SF Pro Display";
 }
+
 section {
   padding: 100px;
 }
@@ -27,6 +27,17 @@ section {
 .banner h2 span {
   font-size: 1.5em;
   font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(back4.svg);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 4000px 0;
+  }
 }
 .banner h3 {
   font-size: 1.5em;
@@ -35,7 +46,7 @@ section {
 }
 .btn {
   position: relative;
-  background: #2196f3;
+  background: #0000ff;
   display: inline-block;
   color: white;
   margin-top: 20px;
@@ -107,6 +118,7 @@ header.sticky ul li a {
 .content {
   display: flex;
   justify-content: space-between;
+  line-height: 1.6;
 }
 .contentBx {
   padding-right: 55px;
@@ -122,7 +134,7 @@ img {
   max-width: 100%;
 }
 .skills {
-  background: #111;
+  background: #000;
 }
 .heading.white {
   color: #fff;
@@ -133,23 +145,62 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  line-height: 1.6;
 }
 .skills .content .skillsBx {
-  padding: 40px 20px;
+  padding: 40px 30px;
   background: #222;
   color: white;
   max-width: 340px;
   margin: 21.5px;
   text-align: center;
   transition: 0.4s;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 .skills .content .skillsBx:hover {
-  background: #2196f3;
+  background: #0000ff;
 }
 .skills .content .skillsBx img {
   max-width: 128px;
   filter: invert(1);
+}
+.container .music-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.container .music-container .box {
+  height: 8rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background: #f1f3f4;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 2rem;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.container .music-container .box .image {
+  height: 100%;
+  width: 28%;
+}
+.container .music-container .box .image img {
+  height: 100%;
+  width: 100%;
+}
+.container .music-container.box .music {
+  width: 100%;
+}
+.container .music-container.box .music audio {
+  width: 100%;
+  outline: none;z
+}
+.container .music-container .box .music audio::-webkit-media-controls-enclosure {
+  background: none;
+}
+.contact {
+  background: #000;
+  line-height: 1.6;
 }
 .card {
   position: relative;
@@ -157,7 +208,7 @@ img {
   top: 50%;
   width: 300px;
   height: 400px;
-  background: #ebe645;
+  background: #ffffff;
   transform-style: preserve-3d;
   transform: perspective(1000px);
   box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
@@ -209,21 +260,20 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 10px;
 }
 .card .details .content h2 {
   text-align: center;
-  font-weight: 700;
-  line-height: 1em;
-  color: #082032;
-}
-.card .details .content h2 span {
-  color: #344cb7;
-  font-size: 0.9em;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
 }
 .card .details .content .social-icons {
   position: relative;
   display: flex;
   margin-top: 10px;
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 .card .details .content .social-icons a {
   display: inline;
