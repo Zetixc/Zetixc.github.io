@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    alert("Selamat Datang di Portofolio Saya");
+  </script>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
@@ -8,33 +11,33 @@
   </head>
   <body>
     <header>
-      <a href="#" class="logo">PORTFOLIO</a>
+      <a href="#" class="logo">PORTOFOLIO</a>
       <div class="toggle"></div>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#minat">Minat</a></li>
+        <li><a href="#projek">Projek</a></li>
+        <li><a href="#medsos">Medsos</a></li>
       </ul>
     </header>
-    <section class="banner">
+    <section class="banner" id="home">
       <div class="textBx">
-        <h2>Hello, I'm<br /><span>'Aarif Faqiih</span></h2>
-        <h3>I'm a student of SMK Telkom Purwokerto</h3>
-        <a href="#" class="btn">About Me</a>
+        <h2>Halo, Saya<br /><span>'Aarif Faqiih</span></h2>
+        <a href="#about" class="btn">Selengkapnya</a>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="heading">
-        <h2>About Me</h2>
+        <h2>Perkenalan</h2>
       </div>
       <div class="content">
         <div class="contentBx w50">
-          <h3>I'm a high school student</h3>
           <p>
-            Hi, my name is 'Aarif Rahman Jalaluddin Faqihh, people used to call me Faqih. I live in Banyumas Regency, precisely in the city of Purwokerto. I'm a student from SMK Telkom Purwokerto and I'm interested in programming, that's
-            why I took Web Design extracurricular. In Web Design extracurricular I learned many things, for example I learned how to make my own website, I know various programming languages ​​and many more, the first thing I learned in
-            extracurricular was HTML. So that's all my short introduction, have a nice day.
+            Nama lengkap saya 'Aarif Rahmaan Rahmaan Jalaluddin Faqiih, nama panggilan saya Faqih, saya bertempat tinggal di kabupaten Banyumas tepatnya di kota Purwokerto. Saya seorang pelajar dari SMK Telkom Purwokerto dengan jurusan RPL
+            (Rekayasa Perangkat Lunak), saya memilih jurusan tersebut karena saya meiliki minat di bidang pemrograman, terutama pemrograman website, saya juga mengikuti ekstra kulikuler web technologies, seperti namanya ekskul ini fokus
+            pada pengembangan website. Hobi saya menonton film atau video, mendengar musik dan membuat musik. Saya mulai belajar membuat musik sejak 2017 dan genre musik saya adalah EDM, software yang saya gunakan untuk membuat musik yaitu
+            FL Studio dan Caustic 3.
           </p>
         </div>
         <div class="w50">
@@ -42,32 +45,63 @@
         </div>
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="minat">
       <div class="heading white">
-        <h2>My Skills</h2>
+        <h2>Minat</h2>
       </div>
       <div class="content">
         <div class="skillsBx">
           <img src="kalo final/web.png" width="128px" height="128px" />
-          <h2>Web Development</h2>
-          <p>I'm still a beginner in this field but I will try my best</p>
+          <h2>Website</h2>
+          <p>Dimulai saat kelas 3 SMP.</p>
         </div>
         <div class="skillsBx">
           <img src="kalo final/music.png" width="128px" height="128px" />
-          <h2>Music Production</h2>
-          <p>I've studied in this field for 3 years, but now I very rarely do it</p>
+          <h2>Musik Elektronik</h2>
+          <p>Dimulai saat kelas 1 SMP.</p>
         </div>
         <div class="skillsBx">
-          <img src="kalo final/3d.png" width="128px" height="128px" />
-          <h2>3D Model</h2>
-          <p>I'm still a beginner in this field but I will try my best</p>
+          <img src="camera.png" width="128px" height="128px" />
+          <h2>Fotografi</h2>
+          <p>Dimulai saat kelas 1 SMK</p>
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="projek" id="projek">
+      <div class="container">
+        <center><h2>Projek</h2></center>
+        <div class="music-container">
+          <div class="box">
+            <div class="image">
+              <img src="progressive.png" />
+            </div>
+            <div class="music">
+              <audio src="progressive.mp3" controls></audio>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="ocean.png" />
+            </div>
+            <div class="music">
+              <audio src="ocean.mp3" controls></audio>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="magic_power.png" />
+            </div>
+            <div class="music">
+              <audio src="magic_power.mp3" controls></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="medsos">
       <div class="heading">
-        <h2>Contact</h2>
-        <p>Want to contact me? You can open this card</p>
+        <h2 style="color: #fff">Media Sosial</h2>
+        <p style="color: #fff">Silakan buka kartu ini untuk melihat media sosial saya.</p>
       </div>
       <div>
         <div class="card">
@@ -77,7 +111,7 @@
           </div>
           <div class="details">
             <div class="content">
-              <h2>Hi, this is my<br /><span>Social media</span></h2>
+              <h2 style="color: #000000">Senang bertemu anda.<br /><span style="color: #0000ff">Berikut media sosial saya.</span></h2>
               <div class="social-icons">
                 <a href="https://www.instagram.com/zetixcs/"><img src="instagram.png" height="26px" /></a>
                 <a href="https://www.behance.net/aariffaqiih"><img src="behance.png" height="27px" /></a>
