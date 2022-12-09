@@ -202,6 +202,15 @@ img {
   background: #000;
   line-height: 1.6;
 }
+.bottom{
+  background: rgb(255, 255, 255);
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.bottom p{
+  word-spacing: 2px;
+}
 .card {
   position: relative;
   left: 37%;
