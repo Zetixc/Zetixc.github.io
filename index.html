@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    alert("Selamat Datang di Portofolio Saya");
+  </script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">PORTOFOLIO</a>
+      <div class="toggle"></div>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#minat">Minat</a></li>
+        <li><a href="#projek">Projek</a></li>
+        <li><a href="#medsos">Medsos</a></li>
+      </ul>
+    </header>
+    <section class="banner" id="home">
+      <div class="textBx">
+        <h2>Halo, Saya<br /><span>'Aarif Faqiih</span></h2>
+        <a href="#about" class="btn">Selengkapnya</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>Perkenalan</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx w50">
+          <p>
+            Nama lengkap saya 'Aarif Rahmaan Rahmaan Jalaluddin Faqiih, nama panggilan saya Faqih, saya bertempat tinggal di kabupaten Banyumas tepatnya di kota Purwokerto. Saya seorang pelajar dari SMK Telkom Purwokerto dengan jurusan RPL
+            (Rekayasa Perangkat Lunak), saya memilih jurusan tersebut karena saya meiliki minat di bidang pemrograman, terutama pemrograman website, saya juga mengikuti ekstra kulikuler web technologies, seperti namanya ekskul ini fokus
+            pada pengembangan website. Hobi saya menonton film atau video, mendengar musik dan membuat musik. Saya mulai belajar membuat musik sejak 2017 dan genre musik saya adalah EDM, software yang saya gunakan untuk membuat musik yaitu
+            FL Studio dan Caustic 3.
+          </p>
+        </div>
+        <div class="w50">
+          <img src="img1.jpg" class="img" />
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="minat">
+      <div class="heading white">
+        <h2>Minat</h2>
+      </div>
+      <div class="content">
+        <div class="skillsBx">
+          <a href="#home">
+            <img src="kalo final/web.png" width="128px" height="128px" />
+          </a>
+          <h2>Website</h2>
+          <p>Dimulai saat kelas 3 SMP.</p>
+        </div>
+        <div class="skillsBx">
+          <a href="#projek"> <img src="kalo final/music.png" width="128px" height="128px" /></a>
+          <h2>Musik Elektronik</h2>
+          <p>Dimulai saat kelas 1 SMP.</p>
+        </div>
+        <div class="skillsBx">
+          <a href="https://www.youtube.com/watch?v=pDZawD9Tr4k&list=PLtJj9_XqTZ_Dy8aNEMkDDHvi3U7drC46i"> <img src="film.png" width="128px" height="128px" /></a>
+          <h2>Videografi</h2>
+          <p>Dimulai saat kelas 1 SMP</p>
+        </div>
+      </div>
+    </section>
+    <section class="projek" id="projek">
+      <div class="container">
+        <center><h2>Projek</h2></center>
+        <div class="music-container">
+          <div class="box">
+            <div class="image">
+              <img src="progressive.png" />
+            </div>
+            <div class="music">
+              <audio src="progressive.mp3" controls></audio>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="ocean.png" />
+            </div>
+            <div class="music">
+              <audio src="ocean.mp3" controls></audio>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="magic_power.png" />
+            </div>
+            <div class="music">
+              <audio src="magic_power.mp3" controls></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="medsos">
+      <div class="heading">
+        <h2 style="color: #fff">Media Sosial</h2>
+        <p style="color: #fff">Silakan buka kartu ini untuk melihat media sosial saya.</p>
+      </div>
+      <div>
+        <div class="card">
+          <div class="imgBox">
+            <img src="depan.jpg" />
+            <img src="belakang.jpg" />
+          </div>
+          <div class="details">
+            <div class="content">
+              <h2 style="color: #000000">Senang bertemu anda.<br /><span style="color: #0000ff">Berikut media sosial saya.</span></h2>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/zetixcs/"><img src="instagram.png" height="26px" /></a>
+                <a href="https://www.behance.net/aariffaqiih"><img src="behance.png" height="27px" /></a>
+                <a href="#"><img src="github.png" height="29px" /></a>
+                <a href="https://www.youtube.com/channel/UC9WAt38ptIECNHItoeiceqw"><img src="youtube.png" height="29px" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="bottom">
+        <p>Copyright &copy;2021 <b> 'Aarif Faqiih </b> A.k.a <b> Zetixc </b></p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
