@@ -12,6 +12,7 @@ section {
   position: relative;
   min-height: 100vh;
   background: url(bg1.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: right;
   display: flex;
